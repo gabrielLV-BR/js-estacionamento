@@ -4,14 +4,13 @@ dotenv.config()
 import express from "express"
 const app = express()
 
-import VehicleRouter from "./routes/vehicle"
+import cors from "cors"
 
+app.use(cors())
 app.use(express.json())
 app.use(express.static("assets"))
 
-app.get("/", (req, res) => {
-
-})
+import VehicleRouter from "./routes/vehicle"
 
 app.use("/vehicle", VehicleRouter);
 
