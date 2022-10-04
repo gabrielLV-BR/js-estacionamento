@@ -1,0 +1,33 @@
+:root {
+  font-size: 16px;
+
+  --primary-color: rgb(40, 74, 183);
+  --secondary-color: rgb(40, 183, 102);
+  --terciary-color: rgb(183, 64, 40);
+
+  --font-color: rgb(0, 0, 0);
+  --background-color: rgb(255, 255, 255);
+
+  --error: rgb(220, 25, 40);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+}
+
+a, button {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  padding: 0.4rem;
+  border: none;
+}
